@@ -74,3 +74,13 @@ h1 {
         height: 100px;
     }
 }
+@media (min-width = 374px) {
+    h1 {
+        font-size: 30px;
+    }
+    .container {
+        margin: 80px auto;
+        width: 90%;
+        height: 500px;
+    }
+    
