@@ -38,8 +38,8 @@ jq("#confirm").on('click', function(event) {
     else if (jq('#second-today').is(':checked') == false && jq('#first-today').is(':checked') == false) {
         firstDate = new Date(jq("#first-date").val());
         endDate = new Date(jq("#end-date").val());
-        if(firstDate != "Invalid Date") {
-            if(endDate != "Invalid Date") {
+        if(firstDate) {
+            if(endDate) {
             jq('#test').text(`${countDate(firstDate, endDate)} ngày!`)
             // console.log(typeof firstDate,typeof endDate)
             }
