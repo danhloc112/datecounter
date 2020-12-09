@@ -15,7 +15,7 @@ h1 {
 }
 .container {
     margin-top: 80px;
-    height: 500px;
+    /* height: 500px; */
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(130, 181, 247,1);
@@ -24,10 +24,11 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 20px;
 }
-.form label {
+.form .title-date {
     color: #0547a9;
-    font-size: 25px;
+    font-size: 20px;
 }
+
 .form input {
     border-radius: 5px;
     width: 100%;
@@ -38,8 +39,33 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     border: 1px solid  #0547a9;
 }
+.date {
+    display: flex;
+}
+#first-today {
+    height: 15px;
+    margin: auto;
+}
+#second-today {
+    height: 15px;
+    margin: auto;
+}
+.today-label {
+    font-size: 16px;
+    color: #0547a9;
+    margin: auto;
+}
+button {
+    width: 100%;
+    height: 30px;
+    background-color: #f5b95e;
+    border: none;
+    justify-content: center;
+    color: #0547a9;
+    border-radius: 3px;
+}
 .result {
-    margin: 40px 155px;
+    margin: 30px auto;
     width: 200px;
     height: 100px;
     color: #f5b95e;
@@ -47,5 +73,9 @@ h1 {
     font-size: 60px;
     text-align: center;
     /* background-color: rgba(130, 181, 247,1); */
-
+    
 }
+#test {
+    margin: 0 auto;
+}
+
