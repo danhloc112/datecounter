@@ -35,6 +35,19 @@ jq("#confirm").on('click', function(event) {
         endDate = today;
         jq('#test').text(`${countDate(firstDate, endDate)} ngày!`)
     }
+    else if (jq('#second-today').is(':checked') == false && jq('#first-today').is(':checked') == false) {
+        firstDate = new Date(jq("#first-date").val());
+        endDate = new Date(jq("#end-date").val());
+        if(firstDate != "Invalid Date") {
+            if(endDate != "Invalid Date") {
+            jq('#test').text(`${countDate(firstDate, endDate)} ngày!`)
+            // console.log(typeof firstDate,typeof endDate)
+            }
+        }
+        else {
+            jq('#test').text(`Vui lòng nhập ngày!`).css('font-size', '28px')
+        }
+    }
     else {
 
         jq('#test').text(`Vui lòng nhập ngày!`).css('font-size', '28px')
